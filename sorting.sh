@@ -22,7 +22,7 @@ for ((i=0;i<=3;i++))
 do
 	for((j=0;j<=3;j++))
 	do
-		if (( ${arr[i]}>${arr[j]} ))
+		if (( ${arr[i]}<${arr[j]} ))
 		then
 			temp=${arr[i]}
 			arr[i]=${arr[j]}
