@@ -12,6 +12,8 @@ result[counter++]="$z1"
 result[counter++]="$z2"
 result[counter++]="$z3"
 result[counter++]="$z4"
-echo "All keys:" ${!result[@]}
-echo "All results:" ${result[@]}
-
+for DATA in "${result[@]}"
+do
+	arr+=("${DATA##*:}")
+done
+echo "${arr[@]}"
